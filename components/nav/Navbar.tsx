@@ -7,8 +7,8 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   return (
     <div>
-      <nav className=" sticky top-0 z-40  backdrop-filter backdrop-blur-lg">
-        <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-10">
+      <nav className=" sticky top-0 z-10 bg-[#000000] shadow-2xl ">
+        <div className="justify-between  px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-10 sticky top-0 z-10  ">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 ">
               <Link href="/">

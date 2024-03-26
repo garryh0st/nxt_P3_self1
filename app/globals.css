@@ -35,3 +35,35 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer base {
+  .font-outline-2 {
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+  }
+  .font-outline-0 {
+    -webkit-text-stroke: 0px black;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+  @font-face {
+    font-family: Helveticalight;
+    src: url(../public/fonts/helvetica_light.ttf) ;
+  }
+  @font-face {
+    font-family: Helvetica;
+    src: url(../public/fonts/helvetica_outline.ttf);
+  }
+  @font-face {
+    font-family: ppm-blackbold;
+    src: url(../public/fonts/ppm-black.otf) ;
+  }
+  @font-face {
+    font-family: ppm-blackitalic;
+    src: url(../public/fonts/ppm-blackitalic.otf) ;
+  }
+  @font-face {
+    font-family: ppm-ultrabold;
+    src: url(../public/fonts/ppm-ultrabold.otf) ;
+  }
+}
