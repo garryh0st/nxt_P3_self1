@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const [textColor, setTextColor] = useState("red");
   return (
-    <div className="bg-hero bg-no-repeat bg-cover overflow-x-hidden ">
+    <div className="bg-hero bg-center bg-no-repeat bg-cover overflow-x-hidden ">
       <div className="flex flex-col justify-center items-center h-screen w-screen  backdrop-blur-sm">
         <div className="text-center  text-[#ffffff00] z-10 text-[5vh] uppercase  font-[ppm-blackitalic] sm:text-[12vh] font-outline-2 sm:text-wrap sm:text-left sm:leading-[10vh] sm:ml-9 md:text-[13vh] md:font-outline-0 lg:text-wrap lg:text-left lg:leading-[17vh] lg:text-[17vh] lg:font-outline-2 lg:drop-shadow-2xl">
           Advik Aggarwal
