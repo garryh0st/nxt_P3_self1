@@ -5,9 +5,9 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   const [textColor, setTextColor] = useState("red");
   return (
-    <div>
-      <div className="flex flex-col justify-center items-center h-screen w-screen">
-        <div className="text-center  text-[#ffffff] text-[5.5vh] uppercase font-outline-2 font-[ppm-blackitalic] sm:text-[12vh] sm:text-wrap sm:text-left sm:leading-[10vh] sm:ml-9 md:text-[13vh] md:font-outline-0 lg:text-wrap lg:text-left lg:leading-[17vh] lg:text-[17vh] lg:font-outline-0 lg:drop-shadow-2xl">
+    <div className="bg-hero bg-no-repeat bg-cover overflow-x-hidden ">
+      <div className="flex flex-col justify-center items-center h-screen w-screen  backdrop-blur-sm">
+        <div className="text-center  text-[#ffffff00] z-10 text-[5vh] uppercase  font-[ppm-blackitalic] sm:text-[12vh] font-outline-2 sm:text-wrap sm:text-left sm:leading-[10vh] sm:ml-9 md:text-[13vh] md:font-outline-0 lg:text-wrap lg:text-left lg:leading-[17vh] lg:text-[17vh] lg:font-outline-2 lg:drop-shadow-2xl">
           Advik Aggarwal
         </div>
         <div
@@ -18,23 +18,23 @@ const Hero = () => {
           className="flex justify-center w-screen ml-12 text-[1.5vh] sm:justify-start sm:ml-20 sm:mt-5 sm:text-[4vh] "
         >
           <TypeAnimation
-            className="text-center mb-16 font-[ppm-blackbold]   "
+            className="text-center mb-16 font-[ppm-blackbold] font-outline-1 text-[#ffffff00]   "
             sequence={[
               "I'm a Programmer",
               500,
-              () => {
-                setTextColor("hsl(217, 90%, 61%,");
-              },
+              // () => {
+              //   setTextColor("hsl(217, 90%, 61%,");
+              // },
               "I'm a Student",
               900,
-              () => {
-                setTextColor("hsl(318, 100%, 60%,");
-              },
+              // () => {
+              //   setTextColor("hsl(318, 100%, 60%,");
+              // },
               "I'm a Designer",
               400,
-              () => {
-                setTextColor("hsl(120, 100%,");
-              },
+              // () => {
+              //   setTextColor("hsl(120, 100%,");
+              // },
             ]}
             repeat={1}
             speed={{
@@ -46,6 +46,11 @@ const Hero = () => {
           />
         </div>
       </div>
+
+      <div className="laser-beam"></div>
+      <div className="laser-beam red"></div>
+      <div className="laser-beam purple"></div>
+      <div className="laser-beam green"></div>
     </div>
   );
 };

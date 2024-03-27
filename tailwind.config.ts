@@ -9,17 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'helveticalight': ['Helveticalight', 'Arial', 'sans-serif'],
-        'helvetica': ['Helvetica', 'Arial', 'sans-serif'],
-        'ppm-blackbold': ['ppm-blackbold', 'Arial', 'sans-serif'],
-        'ppm-blackitalic': ['ppm-blackitalic', 'Arial', 'sans-serif'],
-        'ppm-ultrabold': ['ppm-ultrabold', 'Arial', 'sans-serif'],
-
+        helveticalight: ["Helveticalight", "Arial", "sans-serif"],
+        helvetica: ["Helvetica", "Arial", "sans-serif"],
+        "ppm-blackbold": ["ppm-blackbold", "Arial", "sans-serif"],
+        "ppm-blackitalic": ["ppm-blackitalic", "Arial", "sans-serif"],
+        "ppm-ultrabold": ["ppm-ultrabold", "Arial", "sans-serif"],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        hero: "url('../public/images/hero.jpg')",
+        "footer-texture": "url('/img/footer-texture.png')",
       },
     },
   },
