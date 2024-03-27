@@ -18,7 +18,7 @@ const Hero = () => {
           className="flex justify-center w-screen ml-12 text-[1.5vh] sm:justify-start sm:ml-20 sm:mt-5 sm:text-[4vh] "
         >
           <TypeAnimation
-            className="text-center mb-16 font-[ppm-blackbold] font-outline-1 text-[#ffffff00]   "
+            className="text-center mb-16 font-[ppm-blackbold] font-outline-1 text-[#13545500]   "
             sequence={[
               "I'm a Programmer",
               500,
