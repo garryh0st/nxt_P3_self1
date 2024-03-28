@@ -40,14 +40,7 @@ const Navbarc = () => {
             <div>
               <p className="text-2xl">Menu</p>
             </div>
-            <div>
-              <div>
-                <p>About</p>
-              </div>
-              <div>
-                <p>Contact</p>
-              </div>
-            </div>
+           
 
             {/* REST OF THE SIDEBAR ITEMS */}
           </div>
