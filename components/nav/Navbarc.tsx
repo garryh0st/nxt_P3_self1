@@ -38,7 +38,28 @@ const Navbarc = () => {
         {drawer && (
           <div>
             <div className="  overflow-hidden fixed top-[-100vh] w-56 translate-y-[100vh] ">
-              <div className="bg-black h-screen">csdcsdcsd</div>
+              <button onClick={handleClick} className="z-10 ml-48">
+            <span
+              className={`bg-white block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm ${
+                      drawer ? "rotate-45 translate-y-1" : "-translate-y-0.5"
+                    }`}
+            ></span>
+            <span
+              className={`bg-white block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm my-0.5 ${
+                      drawer ? "opacity-0" : "opacity-100"
+                    }`}
+            ></span>
+            <span
+              className={`bg-white block transition-all duration-300 ease-out 
+                    h-0.5 w-6 rounded-sm ${
+                      drawer ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
+                    }`}
+            ></span>
+          </button>
+              <div className="h-screen">Normal text</div>
+              
             </div>
           </div>
         )}
