@@ -20,11 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div>
-          <SmoothScrolling>
-            {" "}
-            <Navbarc />
-            {children}
-          </SmoothScrolling>
+          <SmoothScrolling> {children}</SmoothScrolling>
         </div>
       </body>
     </html>

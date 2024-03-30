@@ -13,7 +13,7 @@ const Navbarc = () => {
     <div>
       <div>
         <div>
-          <button onClick={handleClick} className="z-10">
+          <button onClick={handleClick} className="z-10 ml-48">
             <span
               className={`bg-white block transition-all duration-300 ease-out 
                     h-0.5 w-6 rounded-sm ${
@@ -37,7 +37,7 @@ const Navbarc = () => {
         {/* DRAWER */}
         {drawer && (
           <div>
-            <div className="z-10 overflow-hidden fixed">
+            <div className="  overflow-hidden fixed top-[-100vh] w-56 translate-y-[100vh] ">
               <div className="bg-black h-screen">csdcsdcsd</div>
             </div>
           </div>
