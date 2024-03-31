@@ -108,4 +108,25 @@ body {
 .paragraph {
   font-family: open-sauce;
   font-size: 2vh;
+  justify-items: start;
+
+}
+
+.btn-primary {
+  border-radius: 40px;
+  border-color: white;
+  border-width: .5px;
+  font-size: 2vh;
+  color:#777777;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width:20vh;
+}
+
+.btn-primary:hover {
+  background-color: #7777772d;
+  color:#ffffff;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+
 }

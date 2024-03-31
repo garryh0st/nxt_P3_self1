@@ -7,7 +7,9 @@ const Hero = () => {
         <div className="h-screen w-screen  fixed bg-[#111111] ">
           <nav className="flex justify-between mt-10 paragraph">
             <div className="nav_left flex justify-between mr-[50vh] open-font">
-              <span className="text-[#aaaaaa]">Advik Aggarwal</span>
+              <span className="text-[#aaaaaa]">
+                Advik <br /> Aggarwal
+              </span>
               <span className="text-[#777777]">
                 Web Developer
                 <br />
@@ -15,10 +17,10 @@ const Hero = () => {
               </span>
             </div>
             <div className="nav_right flex justify-around open-font">
-              <span className="text-[#777777] text-wrap h-20 w-[20vh] text-[1.6vh]">
+              <span className="text-[#777777] text-wrap  w-[20vh] text-[1.6vh]">
                 AVAILABLE FOR FREELANCE WORK FROM JUNE 2024
               </span>
-              <span>Web Developer</span>
+              <button className="btn-primary">CONTACT</button>
             </div>
           </nav>
           <div>
