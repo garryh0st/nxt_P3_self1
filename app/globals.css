@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -25,12 +25,9 @@ body{
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
@@ -43,40 +40,68 @@ body {
   .font-outline-2 {
     -webkit-text-stroke: 2px rgb(248, 248, 248);
   }
+
   .font-outline-1 {
     -webkit-text-stroke: 0.5px rgb(255, 255, 255);
   }
+
   .font-outline-4 {
     -webkit-text-stroke: 4px black;
   }
+
   @font-face {
     font-family: Helveticalight;
-    src: url(../public/fonts/helvetica_light.ttf) ;
+    src: url(../public/fonts/helvetica_light.ttf);
   }
+
   @font-face {
     font-family: Helvetica;
     src: url(../public/fonts/helvetica_outline.ttf);
   }
+
   @font-face {
     font-family: ppm-blackbold;
-    src: url(../public/fonts/ppm-black.otf) ;
+    src: url(../public/fonts/ppm-black.otf);
   }
+
   @font-face {
     font-family: ppm-blackitalic;
-    src: url(../public/fonts/ppm-blackitalic.otf) ;
+    src: url(../public/fonts/ppm-blackitalic.otf);
   }
+
   @font-face {
     font-family: ppm-ultrabold;
-    src: url(../public/fonts/ppm-ultrabold.otf) ;
+    src: url(../public/fonts/ppm-ultrabold.otf);
   }
+
   @font-face {
     font-family: bebas;
-    src: url(../public/fonts/bebas.ttf) ;
+    src: url(../public/fonts/bebas.ttf);
   }
+
   @font-face {
     font-family: open-sauce;
     src: url(../public/fonts/opensauce.ttf);
   }
 }
 
+.nav_left{
+  margin-left: 5vh;
+  max-width: 40rem;
+  width: 100%;
+  background-color: aquamarine; 
 
+
+}
+.nav_right{
+  margin-right: 5vh;
+  max-width: 40rem;
+  width: 100%;
+  background-color: aquamarine;
+
+
+}
+.paragraph {
+  font-family: open-sauce;
+  font-size: 2vh;
+}
