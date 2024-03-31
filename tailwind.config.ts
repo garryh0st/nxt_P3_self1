@@ -14,6 +14,10 @@ const config: Config = {
         "ppm-blackbold": ["ppm-blackbold", "Arial", "sans-serif"],
         "ppm-blackitalic": ["ppm-blackitalic", "Arial", "sans-serif"],
         "ppm-ultrabold": ["ppm-ultrabold", "Arial", "sans-serif"],
+        "bebas": ["bebas", "Arial", "sans-serif"],
+        "open-sauce": ["open-sauce", "Arial", "sans-serif"],
+
+
       },
       backgroundImage: {
         hero: "url('../public/images/hero.jpg')",
