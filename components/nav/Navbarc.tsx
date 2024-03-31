@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Menu2 as MenuIcon, X as XIcon } from "tabler-icons-react";
 import React from "react";
+import "@/public/styles/nav.css";
 
 const Navbarc = () => {
   const [drawer, setDrawer] = useState(false);
@@ -9,25 +10,26 @@ const Navbarc = () => {
   const handleClick = () => {
     setDrawer(!drawer);
   };
+
   return (
-    <div>
+    <div className="">
       <div>
         <div>
           <button onClick={handleClick} className="z-10 ml-48">
             <span
-              className={`bg-white block transition-all duration-300 ease-out 
+              className={`bg-white block transition-all duration-500 ease-in-out 
                     h-0.5 w-6 rounded-sm ${
                       drawer ? "rotate-45 translate-y-1" : "-translate-y-0.5"
                     }`}
             ></span>
             <span
-              className={`bg-white block transition-all duration-300 ease-out 
+              className={`bg-white block transition-all duration-500 ease-in-out 
                     h-0.5 w-6 rounded-sm my-0.5 ${
                       drawer ? "opacity-0" : "opacity-100"
                     }`}
             ></span>
             <span
-              className={`bg-white block transition-all duration-300 ease-out 
+              className={`bg-white block transition-all duration-500 ease-in-out 
                     h-0.5 w-6 rounded-sm ${
                       drawer ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
                     }`}
@@ -36,30 +38,29 @@ const Navbarc = () => {
         </div>
         {/* DRAWER */}
         {drawer && (
-          <div>
-            <div className="  overflow-hidden fixed top-[-100vh] w-56 translate-y-[100vh] ">
-              <button onClick={handleClick} className="z-10 ml-48">
-            <span
-              className={`bg-white block transition-all duration-300 ease-out 
+          <div className="transform-animation">
+            <div className="transform-animation overflow-hidden fixed top-[-100vh] w-56 translate-y-[100vh] bg-black ">
+              <button onClick={handleClick} className="z-10 ml-48 ">
+                <span
+                  className={`bg-white block transition-all duration-500 ease-in-out 
                     h-0.5 w-6 rounded-sm ${
                       drawer ? "rotate-45 translate-y-1" : "-translate-y-0.5"
                     }`}
-            ></span>
-            <span
-              className={`bg-white block transition-all duration-300 ease-out 
+                ></span>
+                <span
+                  className={`bg-white block transition-all duration-500 ease-in-out 
                     h-0.5 w-6 rounded-sm my-0.5 ${
                       drawer ? "opacity-0" : "opacity-100"
                     }`}
-            ></span>
-            <span
-              className={`bg-white block transition-all duration-300 ease-out 
+                ></span>
+                <span
+                  className={`bg-white block transition-all duration-500 ease-in-out 
                     h-0.5 w-6 rounded-sm ${
                       drawer ? "-rotate-45 -translate-y-1" : "translate-y-0.5"
                     }`}
-            ></span>
-          </button>
-              <div className="h-screen">Normal text</div>
-              
+                ></span>
+              </button>
+              <div className="transform-animation h-screen">Normal text</div>
             </div>
           </div>
         )}

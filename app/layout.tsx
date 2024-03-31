@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div>
-          <SmoothScrolling> {children}</SmoothScrolling>
+          <SmoothScrolling>
+            {children}
+          </SmoothScrolling>
         </div>
       </body>
     </html>
