@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <section>
-        <div className="h-screen w-screen  fixed bg-[#111111] ">
+        <div className="h-screen w-screen   bg-[#111111] ">
           <nav className="flex justify-between mt-10 paragraph">
             <div className="nav_left flex justify-between mr-[50vh] open-font">
               <span className="text-[#aaaaaa]">
@@ -23,8 +23,8 @@ const Hero = () => {
               <button className="btn-primary">CONTACT</button>
             </div>
           </nav>
-          <div>
-            <h1>FRONT END DEVELOPER</h1>
+          <div className=" w-screen h-screen flex items-center justify-center ml-10 tracking-[-0.5vh] ">
+            <h1 className="heading">FRONT ── END DEVELOPER</h1>
           </div>
         </div>
       </section>

@@ -130,3 +130,13 @@ body {
   transition: color 0.3s;
 
 }
+
+.heading{
+  font-size: 38vh;
+  font-family: bebas;
+  color:#777777;
+  word-spacing:-15px;
+  font-weight: 700;
+  line-height: 30vh;
+  transform:scaleY(1.3)
+}
