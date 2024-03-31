@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-[#111111]">
+      <body>
         <div>
           <SmoothScrolling>{children}</SmoothScrolling>
         </div>
