@@ -1,11 +1,9 @@
-
-import Heroo from "./_components/Heroo";
-
+import Hero from "./_components/Hero";
 
 export default function Home() {
   return (
     <div className="  h-screen w-screen  bg-[#1e1e1e] items-end">
-      <Heroo /> 
-    </div>
+      <Hero />
+   </div>
   );
 }
