@@ -16,9 +16,7 @@ const Hero = () => {
   const developerMaskRef = useRef(null);
 
   useEffect(() => {
-    // if (ref.current) {
-      if (typeof window !== 'undefined') {
-        if (ref.current) {
+      if (typeof window !== 'undefined' && ref.current) {
       const scroll = new LocomotiveScroll({
         el: ref.current,
         smooth: true,
@@ -74,7 +72,7 @@ const Hero = () => {
           }
         );
       }
-    }}
+    }
   }, []);
 
   return (
