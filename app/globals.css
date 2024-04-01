@@ -7,6 +7,9 @@
 
 body {
   overflow-x: hidden;
+  height:100%;
+  width: 100%;
+  background-color:aqua ;
 }
 
 :root {
@@ -23,12 +26,7 @@ body {
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
@@ -140,3 +138,5 @@ body {
   line-height: 30vh;
   transform:scaleY(1.3)
 }
+
+
