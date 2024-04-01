@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import dynamic from "next/dynamic";
@@ -16,7 +16,9 @@ const Hero = () => {
   const developerMaskRef = useRef(null);
 
   useEffect(() => {
-    if (ref.current) {
+    // if (ref.current) {
+      if (typeof window !== 'undefined') {
+        if (ref.current) {
       const scroll = new LocomotiveScroll({
         el: ref.current,
         smooth: true,
@@ -72,7 +74,7 @@ const Hero = () => {
           }
         );
       }
-    }
+    }}
   }, []);
 
   return (

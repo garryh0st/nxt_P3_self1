@@ -98,7 +98,7 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  background: #d4acac; /* Replace with your page's background color */
+  background: #111111; /* Replace with your page's background color */
   animation-name: fadeOut;
   animation-duration: 0.5s;
   animation-delay: 1s;
