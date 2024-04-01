@@ -98,7 +98,21 @@ body {
   left: 0;
   right: 0;
   height: 100%;
-  background: #111111; /* Replace with your page's background color */
+  background: #d4acac; /* Replace with your page's background color */
+  animation-name: fadeOut;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
 }
 
 .txt-hover:hover{
