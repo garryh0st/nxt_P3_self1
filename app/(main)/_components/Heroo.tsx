@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import LocomotiveScroll from "locomotive-scroll";
 
 gsap.registerPlugin(ScrollTrigger);
+
 const Hero = () => {
   const ref = useRef(null);
   const frontend = useRef(null);
@@ -16,7 +17,7 @@ const Hero = () => {
       const scroll = new LocomotiveScroll.default({
         el: ref.current ?? undefined,
         smooth: true,
-        direction: "horizontal",
+        direction: "vertical",
       });
       // Frontend Reveal Animation
       gsap.fromTo(
@@ -37,9 +38,6 @@ const Hero = () => {
         { y: "-10vh" },
         { y: "0%", duration: 1, scrollTrigger: navitems.current }
       );
-
-      // Frontend Animation
-
     });
   }, []);
 
@@ -47,10 +45,10 @@ const Hero = () => {
     <div
       ref={ref}
       data-scroll-container
-      className=" bg-[#111111]  w-screen overflow-x-hidden"
+      className=" bg-[#111111]  w-screen overflow-x-hidden "
     >
-      <section className="hero ">
-        <div className=" h-screen w-screen  -mt-1  bg-[#111111] ">
+      <section className="hero">
+        <div className=" h-screen w-screen  -mt-1  bg-[#c6393900] ">
           <nav
             ref={navitems}
             className="flex justify-between mt-10 lg:[paragraph]"
@@ -84,7 +82,7 @@ const Hero = () => {
                 <span className="txt-hover">o</span>
                 <span className="txt-hover">n</span>
                 <span className="txt-hover">t</span>{" "}
-                <span className=" sm-hidden ">──</span>{" "}
+                <span className="divider sm-hidden ">──</span>{" "}
                 <span className="txt-hover h-full ">E</span>
                 <span className="txt-hover h-full">n</span>
                 <span className="txt-hover h-full">d</span>
@@ -108,7 +106,6 @@ const Hero = () => {
           </section>
         </div>
       </section>
-      
     </div>
   );
 };
