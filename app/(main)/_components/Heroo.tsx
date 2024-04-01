@@ -40,19 +40,6 @@ const Hero = () => {
 
       // Frontend Animation
 
-      // if (frontend.current) {
-      //   gsap.fromTo(
-      //     (frontend.current as HTMLElement).children,
-      //     { y: "40%", opacity: 0 },
-      //     {
-      //       y: "0%",
-      //       opacity: 1,
-      //       duration: 3,
-      //       stagger: 0.05,
-      //       scrollTrigger: frontend.current,
-      //     }
-      // );
-      // }
     });
   }, []);
 
