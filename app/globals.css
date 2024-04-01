@@ -1,15 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
 
 body {
   overflow-x: hidden;
-  height:100%;
+  height: 100%;
   width: 100%;
-  background-color:aqua ;
+  background-color: #111111;
 }
 
 :root {
@@ -26,51 +24,7 @@ body {
   }
 }
 
-
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer base {
-  .font-outline-2 {
-    -webkit-text-stroke: 2px rgb(248, 248, 248);
-  }
-
-  .font-outline-1 {
-    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
-  }
-
-  .font-outline-4 {
-    -webkit-text-stroke: 4px black;
-  }
-
-  @font-face {
-    font-family: Helveticalight;
-    src: url(../public/fonts/helvetica_light.ttf);
-  }
-
-  @font-face {
-    font-family: Helvetica;
-    src: url(../public/fonts/helvetica_outline.ttf);
-  }
-
-  @font-face {
-    font-family: ppm-blackbold;
-    src: url(../public/fonts/ppm-black.otf);
-  }
-
-  @font-face {
-    font-family: ppm-blackitalic;
-    src: url(../public/fonts/ppm-blackitalic.otf);
-  }
-
-  @font-face {
-    font-family: ppm-ultrabold;
-    src: url(../public/fonts/ppm-ultrabold.otf);
-  }
 
   @font-face {
     font-family: bebas;
@@ -83,31 +37,29 @@ body {
   }
 }
 
-.open-font{
+.open-font {
   font-family: open-sauce;
-  font-weight: 900 ;
+  font-weight: 900;
   text-transform: uppercase;
   font-size: 1.6vh;
 }
-.nav_left{
+
+.nav_left {
   margin-left: 5vh;
   max-width: 40rem;
   width: 100%;
-
-
 }
-.nav_right{
+
+.nav_right {
   margin-right: 5vh;
   max-width: 40rem;
   width: 100%;
-
-
 }
+
 .paragraph {
   font-family: open-sauce;
   font-size: 2vh;
   justify-items: start;
-
 }
 
 .btn-primary {
@@ -115,28 +67,41 @@ body {
   border-color: white;
   border-width: .5px;
   font-size: 2vh;
-  color:#777777;
+  color: #777777;
   cursor: pointer;
   transition: background-color 0.3s;
-  width:20vh;
+  width: 20vh;
 }
 
 .btn-primary:hover {
   background-color: #7777772d;
-  color:#ffffff;
+  color: #ffffff;
   transition: background-color 0.3s;
   transition: color 0.3s;
 
 }
 
-.heading{
+.heading {
   font-size: 38vh;
   font-family: bebas;
-  color:#777777;
-  word-spacing:-15px;
+  color: #777777;
   font-weight: 700;
-  line-height: 30vh;
-  transform:scaleY(1.3)
+  line-height: 40vh;
+  transform: scaleY(1.3)
+
 }
 
 
+.mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: #111111; /* Replace with your page's background color */
+}
+
+.txt-hover:hover{
+  color: #999999;
+  transition: color 0.3s;
+}
