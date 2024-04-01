@@ -16,9 +16,9 @@ const Hero = () => {
   const developerMaskRef = useRef(null);
 
   useEffect(() => {
-      if (typeof window !== 'undefined' && ref.current) {
-      const scroll = new LocomotiveScroll({
-        el: ref.current,
+    import('locomotive-scroll').then(LocomotiveScroll => {
+      const scroll = new LocomotiveScroll.default({
+        el: ref.current ?? undefined,
         smooth: true,
         direction: "horizontal",
       });
@@ -72,8 +72,8 @@ const Hero = () => {
           }
         );
       }
-    }
-  }, []);
+    });
+  }, []); // Removed the extra closing curly brace and the extra comma
 
   return (
     <div ref={ref} data-scroll-container>
