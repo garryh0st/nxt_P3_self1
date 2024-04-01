@@ -9,19 +9,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
   const ref = useRef(null);
-  const advikRef = useRef(null);
+  const frontend = useRef(null);
+  const developer = useRef(null);
+  const navitems = useRef(null);
 
   useEffect(() => {
     if (ref.current) {
       const scroll = new LocomotiveScroll({
         el: ref.current,
         smooth: true,
+        direction: "horizontal",
       });
 
       gsap.fromTo(
-        advikRef.current,
+        frontend.current,
         { y: "50%" },
-        { y: "0%", duration: 0.5, scrollTrigger: advikRef.current }
+        { y: "0%", duration: 0.5, delay: 0.5, scrollTrigger: frontend.current }
+      );
+      gsap.fromTo(
+        developer.current,
+        { y: "50%" },
+        { y: "0%", duration: 0.5, delay: 1, scrollTrigger: developer.current }
+      );
+    }
+  }, []);
+
+  useEffect(() => {
+    if (frontend.current) {
+      gsap.fromTo(
+        (frontend.current as HTMLElement).children,
+        { y: "40%", opacity: 0 },
+        {
+          y: "0%",
+          opacity: 1,
+          duration: 1,
+          stagger: 0.05,
+          scrollTrigger: frontend.current,
+        }
       );
     }
   }, []);
@@ -49,11 +73,16 @@ const Hero = () => {
             </div>
           </nav>
           <div className=" w-screen h-screen flex items-center justify-center ml-10 tracking-[-0.5vh] ">
-            <h1 ref={advikRef} className=" heading">
-              FRONT ── END DEVELOPER
+            <h1 ref={frontend} className=" heading">
+              {Array.from("FRONT ── END DEVELOPER").map((letter, index) => (
+                <span key={index} className="letter">
+                  {letter}
+                </span>
+              ))}
             </h1>
           </div>
         </div>
+    
       </section>
     </div>
   );
